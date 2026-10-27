@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Plant Details | GreenLeaf</title>
+  <meta name="description" content="Explore plant details, prices, and plant care tips at GreenLeaf.">
+
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body class="details-page">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg" id="navbar">
+
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">
+        <span class="brand-icon">🌿</span>
+        Green Leaf
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="product.html">Plants</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb -->
+  <div class="container details-breadcrumb">
+    <a href="index.html">Home</a>
+    <i class="fa-solid fa-chevron-right"></i>
+    <a href="product.html">Plants</a>
+    <i class="fa-solid fa-chevron-right"></i>
+    <span id="breadcrumbPlant">Plant Details</span>
+  </div>
+
+  <!-- Product Details -->
+  <main class="container plant-details-container">
+    <div id="plantDetails">
+      <p class="text-center py-5">Loading plant details...</p>
+    </div>
+
+    <div class="details-back-link">
+      <a href="product.html">
+        <i class="fa-solid fa-arrow-left"></i>
+        Back to All Plants
+      </a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="details-footer">
+    <div class="container text-center">
+      <h4><span class="brand-icon">🌿</span> Green Leaf</h4>
+      <p>Bring nature home, one plant at a time.</p>
+      <p class="mb-0">
+        &copy; <span id="detailsYear"></span> GreenLeaf. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

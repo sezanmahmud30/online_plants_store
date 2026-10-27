@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | GreenLeaf</title>
+  <meta name="description" content="Contact GreenLeaf for plant information, plant care questions and assistance.">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar navbar-expand-lg" id="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">🌿 Green Leaf</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+          aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="product.html">Plants</a></li>
+            <li class="nav-item"><a class="nav-link active" href="contact.html" aria-current="page">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="product-hero">
+      <div class="container">
+        <div class="product-hero-content">
+          <p class="section-label">WE ARE HERE TO HELP</p>
+          <h1>Let's Talk About <span>Plants</span></h1>
+          <p>
+            Have questions about our plants or plant care?
+            Send us a message and let us help you.
+          </p>
+          <a href="#contactFormSection" class="btn btn-success">
+            Send Us a Message ↓
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT INFORMATION -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-heading text-center">
+          <p class="section-label">GET IN TOUCH</p>
+          <h2>We'd Love to Hear From You</h2>
+          <p>Choose a way to contact us or send a message using the form below.</p>
+        </div>
+
+        <div class="row g-4 mt-3">
+          <div class="col-md-4">
+            <article class="benefit-card h-100 text-center">
+              <div class="benefit-icon">✉</div>
+              <h3>Email Us</h3>
+              <p>For plant questions and general enquiries.</p>
+              <a href="sezanmahmud@gmail.com">Send an Email</a>
+            </article>
+          </div>
+
+          <div class="col-md-4">
+            <article class="benefit-card h-100 text-center">
+              <div class="benefit-icon">🌱</div>
+              <h3>Plant Care Help</h3>
+              <p>Need help choosing a plant for your space?</p>
+              <a href="product.html">Explore Our Plants</a>
+            </article>
+          </div>
+
+          <div class="col-md-4">
+            <article class="benefit-card h-100 text-center">
+              <div class="benefit-icon">💚</div>
+              <h3>Our Story</h3>
+              <p>Learn more about GreenLeaf and our mission.</p>
+              <a href="about.html">About GreenLeaf</a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section class="section-padding" id="contactFormSection">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="benefit-card">
+              <div class="section-heading text-center">
+                <p class="section-label">CONTACT FORM</p>
+                <h2>Send Us a Message</h2>
+                <p>Fill in the details below. All fields are required.</p>
+              </div>
+
+              <form id="contactForm" class="mt-4">
+                <div class="mb-3">
+                  <label for="contactName" class="form-label">Full Name</label>
+                  <input type="text" class="form-control" id="contactName" name="name" placeholder="Enter your name"
+                    required>
+                </div>
+
+                <div class="mb-3">
+                  <label for="contactEmail" class="form-label">Email Address</label>
+                  <input type="email" class="form-control" id="contactEmail" name="email" placeholder="you@example.com"
+                    required>
+                </div>
+
+                <div class="mb-3">
+                  <label for="contactSubject" class="form-label">Subject</label>
+                  <input type="text" class="form-control" id="contactSubject" name="subject"
+                    placeholder="What would you like to ask?" required>
+                </div>
+
+                <div class="mb-4">
+                  <label for="contactMessage" class="form-label">Your Message</label>
+                  <textarea class="form-control" id="contactMessage" name="message" rows="5"
+                    placeholder="Write your message here..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-success w-100">
+                  Submit Message →
+                </button>
+
+                <p id="contactFormStatus" class="mt-3 text-center" role="status" aria-live="polite"></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LINKS TO OTHER PAGES -->
+    <section class="membership-section section-padding">
+      <div class="container text-center">
+        <p class="section-label">KEEP EXPLORING</p>
+        <h2>Grow With GreenLeaf</h2>
+        <p class="membership-description">
+          Discover our plant collection or learn more about our green community.
+        </p>
+        <a href="index.html" class="btn btn-outline-success me-2">Home</a>
+        <a href="product.html" class="btn btn-success me-2">Shop Plants</a>
+        <a href="about.html" class="btn btn-outline-success">About Us</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-6">
+          <a href="index.html" class="footer-brand">🌿 GreenLeaf</a>
+          <p>Growing happiness, one plant at a time.</p>
+        </div>
+
+        <div class="col-md-6 col-lg-6">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="product.html">Plants</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; <span id="currentYear">2026</span>
+          GreenLeaf Online Plant Store. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CONFIRMATION POPUP -->
+  <div class="modal fade" id="contactSuccessModal" tabindex="-1" aria-labelledby="contactSuccessTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="contactSuccessTitle">Message Ready! 🌿</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Thank you for contacting GreenLeaf! Your form passed validation.
+          This demo does not send or store your message.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal">
+            Got It
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+
+  <!-- CONTACT FORM DEMO -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.getElementById("contactForm");
+      const modalElement = document.getElementById("contactSuccessModal");
+
+      if (form && modalElement) {
+        form.addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          if (!form.checkValidity()) {
+            form.reportValidity();
+            return;
+          }
+
+          const modal = bootstrap.Modal.getOrCreateInstance(modalElement);
+          modal.show();
+          form.reset();
+        });
+      }
+    });
+  </script>
+</body>
+
+</html>

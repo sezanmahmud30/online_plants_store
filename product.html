@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Our Plants | GreenLeaf</title>
+
+  <meta name="description" content="Explore indoor plants, flowering plants and easy-care plants at GreenLeaf.">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <header>
+    <nav class="navbar navbar-expand-lg" id="navbar">
+      <div class="container">
+
+        <a class="navbar-brand" href="index.html">
+          🌿 Green Leaf
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+          aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMenu">
+          <ul class="navbar-nav ms-auto">
+
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="product.html">Plants</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- PRODUCT HERO -->
+    <section class="product-hero">
+      <div class="container">
+        <div class="product-hero-content">
+
+          <p class="section-label">DISCOVER YOUR GREEN SPACE</p>
+
+          <h1>
+            Find Your Perfect
+            <span>Green Companion</span>
+          </h1>
+
+          <p>
+            From beautiful tropical plants to easy-care
+            favourites, discover plants that make your
+            home feel more alive.
+          </p>
+
+          <a href="#plantCollection" class="btn btn-success">
+            Explore Collection ↓
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- COLLECTION -->
+    <section class="product-catalog section-padding" id="plantCollection">
+
+      <div class="container">
+
+        <div class="section-heading text-center">
+          <p class="section-label">OUR PLANT COLLECTION</p>
+          <h2>Plants for Every Space</h2>
+          <p>
+            Choose your favourite plant and find the
+            perfect green addition to your space.
+          </p>
+        </div>
+
+        <!-- SEARCH -->
+        <div class="catalog-toolbar">
+
+          <div class="catalog-search">
+            <label for="plantSearch" class="visually-hidden">
+              Search plants
+            </label>
+
+            <input type="search" id="plantSearch" class="form-control" placeholder="🔍 Search plants by name...">
+          </div>
+
+          <div class="catalog-filter">
+            <label for="plantCategory" class="form-label">
+              Filter by category
+            </label>
+
+            <select id="plantCategory" class="form-select">
+              <option value="all">All Plants</option>
+              <option value="indoor">Indoor Plants</option>
+              <option value="flowering">Flowering Plants</option>
+              <option value="easy-care">Easy Care Plants</option>
+            </select>
+          </div>
+
+        </div>
+
+        <p class="catalog-result" id="plantResult" aria-live="polite">
+          Showing all plants
+        </p>
+
+        <!-- PRODUCT GRID -->
+        <div class="row g-4" id="plantGrid">
+
+          <!-- MONSTERA -->
+          <div class="col-sm-6 col-lg-4 plant-item" data-name="monstera deliciosa monstera" data-category="indoor">
+
+            <article class="product-card catalog-card">
+
+              <div class="product-image-wrapper">
+                <img src="images/monstera.jpg" alt="Monstera Deliciosa indoor plant" class="product-image">
+
+                <span class="product-tag">Popular</span>
+              </div>
+
+              <div class="product-info">
+                <p class="product-category">Indoor Plants</p>
+
+                <h3>Monstera Deliciosa</h3>
+
+                <p>
+                  A tropical beauty with distinctive
+                  split leaves for your living space.
+                </p>
+
+                <div class="product-bottom">
+                  <span class="product-price">৳1,200</span>
+
+                  <button type="button" class="product-button add-cart" data-product="Monstera Deliciosa"
+                    data-price="1200">
+                    Add to Cart +
+                  </button>
+                </div>
+                <a href="product-details.html?plant=monstera" class="btn btn-outline-success w-100 mt-2">
+                  <i class="fa-solid fa-eye"></i> View Details
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- PEACE LILY -->
+          <div class="col-sm-6 col-lg-4 plant-item" data-name="peace lily" data-category="flowering">
+
+            <article class="product-card catalog-card">
+
+              <div class="product-image-wrapper">
+                <img src="images/peace_lily.jpg" alt="Peace Lily flowering houseplant" class="product-image">
+              </div>
+
+              <div class="product-info">
+                <p class="product-category">Flowering Plants</p>
+
+                <h3>Peace Lily</h3>
+
+                <p>
+                  An elegant plant with lush green
+                  leaves and beautiful white flowers.
+                </p>
+
+                <div class="product-bottom">
+                  <span class="product-price">৳850</span>
+
+                  <button type="button" class="product-button add-cart" data-product="Peace Lily" data-price="850">
+                    Add to Cart +
+                  </button>
+                </div>
+                <a href="product-details.html?plant=peace-lily" class="btn btn-outline-success w-100 mt-2">
+                  <i class="fa-solid fa-eye"></i> View Details
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- SNAKE PLANT -->
+          <div class="col-sm-6 col-lg-4 plant-item" data-name="snake plant sansevieria" data-category="easy-care">
+
+            <article class="product-card catalog-card">
+
+              <div class="product-image-wrapper">
+                <img src="images/snake_plant.jpg" alt="Snake Plant in a decorative pot" class="product-image">
+              </div>
+
+              <div class="product-info">
+                <p class="product-category">Easy Care Plants</p>
+
+                <h3>Snake Plant</h3>
+
+                <p>
+                  A stylish, low-maintenance plant
+                  for homes and offices.
+                </p>
+
+                <div class="product-bottom">
+                  <span class="product-price">৳650</span>
+
+                  <button type="button" class="product-button add-cart" data-product="Snake Plant" data-price="650">
+                    Add to Cart +
+                  </button>
+                </div>
+                <a href="product-details.html?plant=snake-plant" class="btn btn-outline-success w-100 mt-2">
+                  <i class="fa-solid fa-eye"></i> View Details
+                </a>
+
+              </div>
+            </article>
+          </div>
+
+          <!-- MONEY PLANT -->
+          <div class="col-sm-6 col-lg-4 plant-item" data-name="money plant pothos" data-category="indoor">
+
+            <article class="product-card catalog-card">
+
+              <div class="product-image-wrapper">
+                <img src="images/money_plant.jpg" alt="Green Money Plant with trailing leaves" class="product-image">
+              </div>
+
+              <div class="product-info">
+                <p class="product-category">Indoor Plants</p>
+
+                <h3>Money Plant</h3>
+
+                <p>
+                  A popular trailing plant that adds
+                  a natural touch to shelves and desks.
+                </p>
+
+                <div class="product-bottom">
+                  <span class="product-price">৳450</span>
+
+                  <button type="button" class="product-button add-cart" data-product="Money Plant" data-price="450">
+                    Add to Cart +
+                  </button>
+                </div>
+                <a href="product-details.html?plant=money-plant" class="btn btn-outline-success w-100 mt-2">
+                  <i class="fa-solid fa-eye"></i> View Details
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- ARECA PALM -->
+          <div class="col-sm-6 col-lg-4 plant-item" data-name="areca palm" data-category="indoor">
+
+            <article class="product-card catalog-card">
+
+              <div class="product-image-wrapper">
+                <img src="images/areca_palm.jpg" alt="Areca Palm tropical indoor plant" class="product-image">
+              </div>
+
+              <div class="product-info">
+                <p class="product-category">Indoor Plants</p>
+
+                <h3>Areca Palm</h3>
+
+                <p>
+                  A leafy tropical plant that brings
+                  a fresh, vibrant look to your room.
+                </p>
+
+                <div class="product-bottom">
+                  <span class="product-price">৳950</span>
+
+                  <button type="button" class="product-button add-cart" data-product="Areca Palm" data-price="950">
+                    Add to Cart +
+                  </button>
+                </div>
+                <a href="product-details.html?plant=areca-palm" class="btn btn-outline-success w-100 mt-2">
+                  <i class="fa-solid fa-eye"></i> View Details
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- JADE PLANT -->
+          <div class="col-sm-6 col-lg-4 plant-item" data-name="jade plant succulent" data-category="easy-care">
+
+            <article class="product-card catalog-card">
+
+              <div class="product-image-wrapper">
+                <img src="images/jade_plant.jpg" alt="Jade Plant succulent in a pot" class="product-image">
+              </div>
+
+              <div class="product-info">
+                <p class="product-category">Easy Care Plants</p>
+
+                <h3>Jade Plant</h3>
+
+                <p>
+                  A compact succulent with thick,
+                  rounded leaves for bright spaces.
+                </p>
+
+                <div class="product-bottom">
+                  <span class="product-price">৳550</span>
+
+                  <button type="button" class="product-button add-cart" data-product="Jade Plant" data-price="550">
+                    Add to Cart +
+                  </button>
+                </div>
+                <a href="product-details.html?plant=jade-plant" class="btn btn-outline-success w-100 mt-2">
+                  <i class="fa-solid fa-eye"></i> View Details
+                </a>
+              </div>
+            </article>
+          </div>
+
+        </div>
+
+        <!-- NO RESULTS MESSAGE -->
+        <div id="noPlantsMessage" class="no-plants-message" hidden>
+          <h3>No plants found 🌱</h3>
+          <p>Try another name or choose a different category.</p>
+        </div>
+
+        <!-- CART SUMMARY -->
+        <section class="cart-summary" id="cartSummary" aria-labelledby="cartHeading">
+
+          <div>
+            <p class="section-label">YOUR SELECTION</p>
+            <h2 id="cartHeading">Shopping Cart</h2>
+            <p id="cartItems">Your cart is empty.</p>
+          </div>
+
+          <div class="cart-total">
+            <span>Total</span>
+            <strong id="cartTotal">৳0</strong>
+          </div>
+
+          <button type="button" id="clearCartButton" class="btn btn-outline-success">
+            Clear Cart
+          </button>
+
+          <p id="cartMessage" class="cart-message" aria-live="polite"></p>
+
+        </section>
+
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="membership-section section-padding">
+      <div class="container text-center">
+
+        <p class="section-label">NEED HELP CHOOSING?</p>
+
+        <h2>Let's Find Your Perfect Plant</h2>
+
+        <p class="membership-description">
+          Have a question about a plant? Get in touch
+          and let us help you explore your options.
+        </p>
+
+        <a href="contact.html" class="btn btn-success">
+          Contact Us →
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+
+      <div class="row g-4">
+
+        <div class="col-md-6">
+          <a href="index.html" class="footer-brand">
+            🌿 GreenLeaf
+          </a>
+
+          <p>
+            Growing happiness, one plant at a time.
+          </p>
+        </div>
+
+        <div class="col-md-6">
+          <h3>Quick Links</h3>
+
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="product.html">Plants</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; <span id="currentYear">2026</span>
+          GreenLeaf Online Plant Store.
+          All rights reserved.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>
